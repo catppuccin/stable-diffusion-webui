@@ -39,6 +39,7 @@
 1. Clone this repository locally
 2. Create the file `user.css` in your stable-diffusion-webui directory
 3. Copy the contents of the desired flavor into `user.css`
+4. Restart the Web UI
 
 ## 🙋 FAQ (optional)
 
