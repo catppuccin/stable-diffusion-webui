@@ -30,6 +30,9 @@
   --shadow: #010409;
   --accent: var(--maroon);
 }
+.dark :is(h1, h2, h3, h4) {
+  color: var(--text);
+}
 
 .context-menu-items a,
 .context-menu-items,
@@ -42,7 +45,9 @@
 
 #txt2img_settings {
   max-width: 40%;
+  color: var(--subtext1);
 }
+
 #txt2img_gallery,
 #img2img_gallery {
   min-height: 600px;
@@ -136,6 +141,11 @@
 .dark .bg-white {
   background-color: var(--surface0);
   color: var(--accent);
+}
+
+.dark .bg-gray-200, .dark .\!bg-gray-200 {
+  background-color: var(--mantle);
+  border-radius: 10px;
 }
 
 .dark .dark\:text-gray-500 {
