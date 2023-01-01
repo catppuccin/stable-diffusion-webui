@@ -46,6 +46,10 @@
 -	Q: **_"How do I change the accent color?"_**\
 	A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
 
+-	Q: **_"Why isn't {extension} themed?"_**\
+	A: Some extensions use their own style sheets that don't play nice with `user.css`.
+
+
 ## 💝 Thanks to
 
 - [Kettukaa](https://github.com/Kettukaa)
