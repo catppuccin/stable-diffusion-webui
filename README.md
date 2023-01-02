@@ -41,7 +41,7 @@
 3. Copy the contents of the desired flavor into `user.css`
 4. Restart the Web UI
 
-## 🙋 FAQ (optional)
+## 🙋 FAQ
 
 -	Q: **_"How do I change the accent color?"_**\
 	A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
