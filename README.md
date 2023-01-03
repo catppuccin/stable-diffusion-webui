@@ -47,11 +47,9 @@
 	A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
 	
 -	Q: **_"The theme isn't being applied???"_**\
-	A: Sometimes Web UI doesn't automatically figure out your preferred theme. Try adding `/?__theme=dark` to the url. 
-	
-	If you want this to be persistent and are on linux or MacOS, then edit `webui-user.sh` and uncomment the line `export COMMANDLINE_ARGS=""` and add `--theme=dark` to the string. 
-	
-	Similarly on windows, you can edit `webui-user.bat` and set the following line `set COMMANDLINE_ARGS=--theme=dark`. 
+	A: Sometimes Web UI doesn't automatically figure out your preferred theme. Try adding `/?__theme=dark` to the url and see if the theme is applied. Below are the steps to make this change persistent on different systems:
+	- **Linux / MacOS**: Edit `webui-user.sh` and uncomment and set this variable as `export COMMANDLINE_ARGS="--theme=dark $COMMANDLINE_ARGS"`
+	- **Windows**: Edit `webui-user.bat` and set this variable by `set COMMANDLINE_ARGS=--theme=dark`. 
 	
 	If you are still having trouble then consult the relevant part of the [webui wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#usercss). 
 	
