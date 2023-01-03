@@ -56,9 +56,23 @@
   outline: 1px solid var(--base);
 }
 
+#txt2img_subseed_show {
+  margin: 0.5em;
+}
+
+#txt2img_width, 
+#txt2img_height,
+#txt2img_batch_count,
+#txt2img_batch_size {
+  margin-bottom: 1.5em;
+}
+
 #txt2img_subseed_show_box > div:nth-child(1) {
   background-color: var(--base);
+  padding-bottom: 0px !important;
 }
+
+
 .context-menu-items a,
 .context-menu-items,
 #context-menu {
@@ -113,13 +127,14 @@
   border-color: transparent;
 }
 
-.dark fieldset span.text-gray-500,
-.dark .gr-block.gr-box span.text-gray-500,
-.dark label.block span {
+fieldset span.text-gray-500,
+.gr-block.gr-box span.text-gray-500,
+label.block span {
   background-color: var(--base);
   color: var(--text);
   border: transparent;
   border-radius: 10px;
+  box-shadow: unset !important;
 }
 #subseed_show_box > div {
   background-color: var(--base);
