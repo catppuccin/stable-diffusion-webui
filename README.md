@@ -6,32 +6,32 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/Kettukaa/catppuccin-webui/stargazers"><img src="https://img.shields.io/github/stars/kettukaa/catppuccin-webui?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/Kettukaa/catppuccin-webui/issues"><img src="https://img.shields.io/github/issues/kettukaa/catppuccin-webui?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/Kettukaa/catppuccin-webui/contributors"><img src="https://img.shields.io/github/contributors/kettukaa/catppuccin-webui?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/Stable-Diffusion-Web-Ui/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/Stable-Diffusion-Web-Ui?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/Stable-Diffusion-Web-Ui/issues"><img src="https://img.shields.io/github/issues/catppuccin/Stable-Diffusion-Web-Ui?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/Stable-Diffusion-Web-Ui/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/Stable-Diffusion-Web-Ui?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/Kettukaa/catppuccin-webui/main/assets/res.webp"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/Stable-Diffusion-Web-Ui/main/assets/res.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/Kettukaa/catppuccin-webui/main/assets/latte.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/Stable-Diffusion-Web-Ui/main/assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/Kettukaa/catppuccin-webui/main/assets/frappe.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/Stable-Diffusion-Web-Ui/main/assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/Kettukaa/catppuccin-webui/main/assets/macchiato.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/Stable-Diffusion-Web-Ui/main/assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/Kettukaa/catppuccin-webui/main/assets/mocha.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/Stable-Diffusion-Web-Ui/main/assets/mocha.png"/>
 </details>
 
 ## Usage
