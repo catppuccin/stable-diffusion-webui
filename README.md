@@ -45,7 +45,16 @@
 
 -	Q: **_"How do I change the accent color?"_**\
 	A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
-
+	
+-	Q: **_"The theme isn't being applied???"_**\
+	A: Sometimes Web UI doesn't automatically figure out your preferred theme. Try adding `/?__theme=dark` to the url. 
+	
+	If you want this to be persistent and are on linux or MacOS, then edit `webui-user.sh` and uncomment the line `export COMMANDLINE_ARGS=""` and add `--theme=dark` to the string. 
+	
+	Similarly on windows, you can edit `webui-user.bat` and set the following line `set COMMANDLINE_ARGS=--theme=dark`. 
+	
+	If you are still having trouble then consult the relevant part of the [webui wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#usercss). 
+	
 -	Q: **_"Why isn't {extension} themed?"_**\
 	A: Some extensions use their own style sheets that don't play nice with `user.css`.
 
