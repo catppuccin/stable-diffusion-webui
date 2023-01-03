@@ -31,9 +31,32 @@
 
 
 .dark :is(h1, h2, h3, h4) {
-  color: var(--text);
+  color: var(--text) !important;
+}
+#tabs > div:nth-child(1) {
+  flex-wrap:wrap-reverse;
+}
+.tabs > div:first-child {
+  border: none !important;
+  margin-bottom: 3px;
+  gap: 3px 0px;
+
+}
+.tabs > div:first-child > button {
+	border-radius: 8px 8px 0px 0px;
+	/* outline: 1px solid var(--base) !important; */
+	border-color: var(--base);
+	border-width: 1px;
+	border-bottom-width: 0px;
 }
 
+.tabs > .tabitem {
+  outline: 1px solid var(--base);
+}
+
+#txt2img_subseed_show_box > div:nth-child(1) {
+  background-color: var(--base);
+}
 .context-menu-items a,
 .context-menu-items,
 #context-menu {
@@ -41,6 +64,10 @@
   color: var(--text) !important;
   border-color: var(--accent) !important;
   border-radius: 10px;
+}
+
+#interrogate_col {
+	min-width: unset !important;
 }
 
 #txt2img_settings {
@@ -75,15 +102,22 @@
 #img2img_interrupt {
   background-color: var(--text);
 }
-.dark .border, .dark .border-gray-100, .dark .border-gray-200, .dark .border-gray-300, .dark .\!border, .dark .\!border-gray-300 {
-	border-color: transparent;
+.dark .border,
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-300,
+.dark .\!border,
+.dark .\!border-gray-300 {
+  border-color: transparent;
 }
 
-.dark fieldset span.text-gray-500, .dark .gr-block.gr-box span.text-gray-500, .dark label.block span {
-	background-color: var(--base);
-	color: var(--text);
-	border: transparent;
-	border-radius: 10px;
+.dark fieldset span.text-gray-500,
+.dark .gr-block.gr-box span.text-gray-500,
+.dark label.block span {
+  background-color: var(--base);
+  color: var(--text);
+  border: transparent;
+  border-radius: 10px;
 }
 #subseed_show_box > div {
   background-color: var(--base);
@@ -127,6 +161,11 @@
   color: var(--text);
 }
 
+.dark .gr-button {
+	border-color: var(--surface1);
+	background-color: var(--base);
+}
+
 .dark .gr-button-secondary {
   background-color: var(--base);
   --tw-gradient-from: var(--base);
@@ -159,10 +198,13 @@
   color: var(--accent);
 }
 
-.dark .bg-gray-200, .dark .\!bg-gray-200 {
+.dark .bg-gray-200,
+.dark .\!bg-gray-200 {
   background-color: var(--mantle);
   border-radius: 10px;
+  gap: 0px 5px;
 }
+
 
 .dark .dark\:text-gray-500 {
   background-color: var(--crust);
@@ -214,15 +256,13 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .gr-form > .gr-block {
-	border-radius: 0.5rem;
-	margin-bottom: 5px;
+  border-radius: 0.5rem;
+  margin-bottom: 5px;
 }
 
 div.svelte-10ogue4 > :not(.absolute) {
   border-radius: 0.5rem;
 }
-
-
 
 .dark .gr-button-secondary:hover {
   --tw-gradient-to: var(--surface0);
