@@ -53,9 +53,11 @@
 	
 	If you are still having trouble then consult the relevant part of the [webui wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#usercss). 
 	
+-	Q: **_"Why doesn't the theme look like the previews?"_**\
+	A: The main UI is constantly being changed upstream, so our previews may not match what the theme will look like for you. Though the previews may be behind, we are frequently updating the themes whenever there is a change in the Web UI repo. Though if you notice a style issue with a recent version of webui, feel free to open an issue on this repo.    
+	
 -	Q: **_"Why isn't {extension} themed?"_**\
 	A: Some extensions use their own style sheets that don't play nice with `user.css`.
-
 
 ## 💝 Thanks to
 
