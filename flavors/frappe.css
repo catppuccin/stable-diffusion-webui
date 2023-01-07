@@ -29,6 +29,10 @@
    --accent: var(--maroon);
 }
 
+div.absolute:nth-child(1) {
+  background-color: transparent;
+}
+
 .dark :is(h1, h2, h3, h4) {
   color: var(--text) !important;
 }
