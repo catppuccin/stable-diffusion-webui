@@ -55,6 +55,12 @@ div.absolute:nth-child(1) {
 .tabs > .tabitem {
   outline: 1px solid var(--base);
 }
+.dark .livePreview {
+  background-color: var(--base);
+}
+#txt2img_gallery img, #img2img_gallery img {
+  object-fit: contain;
+}
 
 #txt2img_subseed_show {
   margin: 0.5em;
