@@ -4,9 +4,11 @@ import shutil
 import gradio as gr
 from modules import script_callbacks
 from modules import shared, scripts
+import modules.scripts as scripts
 
 accents = ['rosewater', 'flamingo', 'pink' , 'mauve' ,'red', 'maroon' ,'peach', 'yellow', 'green', 'teal', 'sky', 'blue', 'sapphire', 'lavender']
 flavors = ['latte', 'frappe', 'macchiato', 'mocha']
+script_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
 def on_ui_settings():
     section = ('ctp', 'Catppuccin Theme')
@@ -32,7 +34,7 @@ def on_ui_settings():
 def on_accent_color_change():
     pattern = re.compile(r"--accent:\s*(.*)")
     # replace the accent color
-    with open(f'extensions/ctp-extension/style.css', "r+") as file:
+    with open(os.path.join(script_path,'style.css'), "r+") as file:
         text = re.sub(pattern, f'--accent: var(--{shared.opts.accent_color});', file.read(), count=1)
         file.seek(0)
         file.write(text)
@@ -40,7 +42,7 @@ def on_accent_color_change():
 
 def on_ui_settings_change():
     # Move css over
-    shutil.copy(f'extensions/ctp-extension/flavors/{shared.opts.ctp_flavor}.css', 'extensions/ctp-extension/style.css')
+    shutil.copy(os.path.join(script_path,f'flavors/{shared.opts.ctp_flavor}.css'), os.path.join(script_path, 'style.css'))
     
     # reappply accent color
     on_accent_color_change()
