@@ -1,4 +1,4 @@
-:root, .dark, #context-menu {
+:root, *, #context-menu {
   --rosewater: #f2d5cf;
   --flamingo: #eebebe;
   --pink: #f4b8e4;

@@ -1,5 +1,5 @@
 :root,
-.dark,
+*,
 #context-menu {
   --rosewater: #f5e0dc;
   --flamingo: #f2cdcd;
@@ -30,6 +30,8 @@
   --shadow: #010409;
   --accent: var(--maroon);
 }
+
+
 #txt2img_prompt_container,
 #img2img_prompt_container {
     background-color: var(--mantle);
