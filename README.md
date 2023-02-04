@@ -35,7 +35,15 @@
 </details>
 
 ## Usage
+### Extension (Recommended)
+1. Open WebUI
+2. Click on the "Extensions" tab 
+3. Click on the "Install from URL" subsection 
+4. Paste `https://github.com/catppuccin/stable-diffusion-webui` into the URL spot, set the local directory name to `Catppuccin Theme`, and install
+5. Go to "Installed" subsection and click "Apply and restart UI"
+6. Configure the theme from the "Settings" tab under "Catppuccin Theme", afterwards you must "Apply Settings" and "Reload UI"
 
+### Add directly
 1. Clone this repository locally
 2. Create the file `user.css` in your stable-diffusion-webui directory
 3. Copy the contents of the desired flavor into `user.css`
@@ -43,7 +51,7 @@
 
 ## 🙋 FAQ
 
--	Q: **_"How do I change the accent color?"_**\
+-	Q: **_"I decided not to use the extennsion, how do I change the accent color?"_**\
 	A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
 	
 -	Q: **_"The theme isn't being applied???"_**\
