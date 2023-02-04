@@ -39,7 +39,7 @@
 1. Open WebUI
 2. Click on the "Extensions" tab 
 3. Click on the "Install from URL" subsection 
-4. Paste `https://github.com/catppuccin/stable-diffusion-webui` into the URL spot and install
+4. Paste `https://github.com/catppuccin/stable-diffusion-webui` into the URL spot, set the local directory name to `Catppuccin Theme`, and install
 5. Go to "Installed" subsection and click "Apply and restart UI"
 6. Configure the theme from the "Settings" tab under "Catppuccin Theme", afterwards you must "Apply Settings" and "Reload UI"
 
