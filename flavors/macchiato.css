@@ -27,6 +27,11 @@
   --crust: #181926;
   --shadow: #010409;
   --accent: var(--maroon);
+  color-scheme: dark;
+}
+
+select, option {
+  background-color: var(--base);
 }
 
 #setting_sd_model_checkpoint > :first-child{

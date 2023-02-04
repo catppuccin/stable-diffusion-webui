@@ -26,9 +26,13 @@
   --mantle: #e6e9ef;
   --crust: #dce0e8;
   --shadow: #dbdfef;
-   --accent: var(--maroon);
+  --accent: var(--maroon);
+   color-scheme: light;
 }
 
+select, option {
+  background-color: var(--base);
+}
 
 #setting_sd_model_checkpoint > :first-child{
   background-color: var(--base);
