@@ -102,7 +102,6 @@ textarea, .gr-text-input {
   background-color: var(--base);
 }
 
-.dark .gr-check-radio:focus,  .gr-check-radio:focus,
 .dark .gr-check-radio:checked, .gr-check-radio:checked {
   background-color: var(--accent);
 }
