@@ -373,12 +373,9 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
+/* gradio 3.4.1 stuff for editable scrollbar values */
 .gr-box > div > div > input.gr-text-input {
-  width: 4em;
+  width: 6em;
 }
 
 .progressDiv .progress {
