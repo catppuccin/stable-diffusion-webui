@@ -28,7 +28,7 @@
   --mantle: #181825;
   --crust: #11111b;
   --shadow: #010409;
-  --accent: var(--sapphire);
+  --accent: var(--maroon);
   color-scheme: dark;
 }
 select, option {
