@@ -209,12 +209,19 @@ margin-left: 10px;
 }
 
 #txt2img_interrupt, #img2img_interrupt {
-background-color: var(--red) !important;
-color: var(--mantle);
+  background-color: var(--accent) !important;
+  filter: hue-rotate(20deg);
+  color: var(--mantle);
+}
+
+#txt2img_interrupt:hover, #img2img_interrupt:hover {
+  background-color: var(--accent) !important;
+  filter: hue-rotate(20deg) brightness(130%);
+  color: var(--mantle);
 }
 
 #txt2img_skip, #img2img_skip {
-background-color: var(--maroon) !important;
+background-color: var(--accent) !important;
 color: var(--mantle);
 }
 
