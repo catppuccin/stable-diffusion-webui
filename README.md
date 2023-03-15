@@ -23,15 +23,15 @@
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="/assets/frappe.png"/>
+<img src="/assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="/assets/macchiato.png"/>
+<img src="/assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="/assets/mocha.png"/>
+<img src="/assets/mocha.webp"/>
 </details>
 
 ## Usage
