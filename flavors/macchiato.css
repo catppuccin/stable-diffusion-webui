@@ -43,7 +43,7 @@
   --link-text-color: var(--ctp-subtext0);
   --link-text-color-hover: var(--ctp-accent);
   --link-text-color-visited: var(--ctp-subtext0);
-  --body-text-color-subdued: var(--ctp-accent);
+  --body-text-color-subdued: var(--ctp-subtext0);
   --shadow-spread: 1px;
   --block-background-fill: var(--ctp-mantle);
   --block-border-color: var(--border-color-primary);
