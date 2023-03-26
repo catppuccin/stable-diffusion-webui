@@ -35,52 +35,58 @@
 </details>
 
 ## Usage
+
 ### Extension (Recommended)
+
 1. Open WebUI
-2. Click on the "Extensions" tab 
-3. Click on the "Install from URL" subsection 
+2. Click on the "Extensions" tab
+3. Click on the "Install from URL" subsection
 4. Paste `https://github.com/catppuccin/stable-diffusion-webui` into the URL spot, set the local directory name to `Catppuccin Theme`, and install
 5. Go to "Installed" subsection and click "Apply and restart UI"
 6. Configure the theme from the "Settings" tab under "Catppuccin Theme", afterwards you must "Apply Settings" and "Reload UI"
 
 ### Extension (Extension index)
-NOTE: This method will install the theme under the name "stable-diffusion-webui". You can read more about this issue in the next section. 
+
+NOTE: This method will install the theme under the name "stable-diffusion-webui". You can read more about this issue in the next section.
+
 1. Open WebUI
 2. Click on the "Extensions" tab and navigate to "Available"
-3. Click "Load From:" and find and install "Catppuccin Theme" from the list 
+3. Click "Load From:" and find and install "Catppuccin Theme" from the list
 4. Go to "Installed" subsection and click "Apply and restart UI"
 5. Configure the theme from the "Settings" tab under "Catppuccin Theme", afterwards you must "Apply Settings" and "Reload UI"
 
 ### Add directly
+
 1. Clone this repository locally
 2. Create the file `user.css` in your stable-diffusion-webui directory
 3. Copy the contents of the desired flavor into `user.css`
 4. Restart the Web UI or click "Reload UI" at the bottom of the screen
 
 ## NOTE
-Due to catppuccin naming conventions and limitations in webui's extension names, this extension will come up as "stable-diffusion-webui" in the extension update section. I have proposed a solution to WebUI [here](https://github.com/catppuccin/stable-diffusion-webui/issues/5#issuecomment-1420599298), feel free to upvote it increase the chances of this issue being resolved. 
+
+Due to catppuccin naming conventions and limitations in webui's extension names, this extension will come up as "stable-diffusion-webui" in the extension update section. I have proposed a solution to WebUI [here](https://github.com/catppuccin/stable-diffusion-webui/issues/5#issuecomment-1420599298), feel free to upvote it increase the chances of this issue being resolved.
 
 ## 🙋 FAQ
 
--	Q: **_"I decided not to use the extennsion, how do I change the accent color?"_**\
-	A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
-	
--	Q: **_"The theme isn't being applied???"_**\
-	A: Sometimes Web UI doesn't automatically figure out your preferred theme. Try adding `/?__theme=dark` to the url and see if the theme is applied. Below are the steps to make this change persistent on different systems:
-	- **Linux / MacOS**: Edit `webui-user.sh` and uncomment and set this variable as `export COMMANDLINE_ARGS="--theme=dark $COMMANDLINE_ARGS"`
-	- **Windows**: Edit `webui-user.bat` and set this variable by `set COMMANDLINE_ARGS=--theme=dark`. 
-	
-	If you are still having trouble then consult the relevant part of the [webui wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#usercss). 
-	
--	Q: **_"Why doesn't the theme look like the previews?"_**\
-	A: The main UI is constantly being changed upstream, so our previews may not match what the theme will look like for you. Though the previews may be behind, we are frequently updating the themes whenever there is a change in the Web UI repo. Though if you notice a style issue with a recent version of webui, feel free to open an issue on this repo.    
-	
--	Q: **_"Why isn't {extension} themed?"_**\
-	A: Some extensions use their own style sheets that don't play nice with `user.css`.
+- Q: **_"I decided not to use the extennsion, how do I change the accent color?"_**\
+  A: Open `user.css` and set the variavble `--accent: var(--{preferred color});`
+- Q: **_"The theme isn't being applied???"_**\
+  A: Sometimes Web UI doesn't automatically figure out your preferred theme. Try adding `/?__theme=dark` to the url and see if the theme is applied. Below are the steps to make this change persistent on different systems:
+
+  - **Linux / MacOS**: Edit `webui-user.sh` and uncomment and set this variable as `export COMMANDLINE_ARGS="--theme=dark $COMMANDLINE_ARGS"`
+  - **Windows**: Edit `webui-user.bat` and set this variable by `set COMMANDLINE_ARGS=--theme=dark`.
+
+  If you are still having trouble then consult the relevant part of the [webui wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#usercss).
+
+- Q: **_"Why doesn't the theme look like the previews?"_**\
+  A: The main UI is constantly being changed upstream, so our previews may not match what the theme will look like for you. Though the previews may be behind, we are frequently updating the themes whenever there is a change in the Web UI repo. Though if you notice a style issue with a recent version of webui, feel free to open an issue on this repo.
+- Q: **_"Why isn't {extension} themed?"_**\
+  A: Some extensions use their own style sheets that don't play nice with `user.css`.
 
 ## 💝 Thanks to
 
 - [Kettukaa](https://github.com/Kettukaa)
+- [Ryan Cao](https://github.com/ryanccn)
 
 &nbsp;
 
