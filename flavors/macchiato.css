@@ -61,10 +61,10 @@
   --panel-background-fill: var(--background-fill-secondary);
   --panel-border-color: var(--border-color-primary);
   --panel_border_width: None;
-  --checkbox-background-color: var(--ctp-surface0);
+  --checkbox-background-color: var(--ctp-surface1);
   --checkbox-background-color-focus: var(--checkbox-background-color);
   --checkbox-background-color-hover: var(--checkbox-background-color);
-  --checkbox-background-color-selected: var(--ctp-overlay0);
+  --checkbox-background-color-selected: var(--ctp-accent);
   --checkbox-border-color: var(--ctp-surface0);
   --checkbox-border-color-focus: var(--ctp-overlay0);
   --checkbox-border-color-hover: var(--ctp-surface0);
