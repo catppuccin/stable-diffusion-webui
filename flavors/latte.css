@@ -127,6 +127,10 @@
   --button-secondary-text-color-hover: var(--button-secondary-text-color);
 }
 
+.gradio-button:hover {
+  filter: brightness(130%);
+}
+
 input[type='range']::-ms-track {
   background: transparent;
 }
