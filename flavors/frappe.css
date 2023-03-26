@@ -106,16 +106,16 @@ textarea, .gr-text-input {
   background-color: var(--accent);
 }
 
-.dark .gr-button-primary:hover, .gr-button-primary:hover {
+.dark .gradio-button.primary:hover, .gradio-button.primary:hover {
 filter: brightness(130%);
 }
-.dark .gr-button-primary, .gr-button-primary {
+.dark .gradio-button.primary, .gradio-button.primary {
 background-color: var(--accent) !important;
 color: var(--shadow)
 }
 
 
-.dark .gr-button-secondary:hover, .gr-button-secondary:hover {
+.dark .gradio-button.secondary:hover, .gradio-button.secondary:hover {
 filter: brightness(120%);
 }
 
@@ -124,9 +124,9 @@ color: var(--accent);
 }
 
 .dark .gr-input-label, .gr-input-label,
-.dark .gr-button-secondary,.gr-button-secondary,
+.dark .gradio-button.secondary,.gradio-button.secondary,
 .gr-input-label,
-.gr-button-secondary {
+.gradio-button.secondary {
   --tw-gradient-from: none;
   --tw-gradient-to: none;
   --tw-gradient-stops: none;
