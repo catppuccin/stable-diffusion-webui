@@ -26,7 +26,7 @@
   --ctp-mantle: #e6e9ef;
   --ctp-crust: #dce0e8;
   --shadow: #dbdfef;
-  --ctp-accent: var(--maroon);
+  --ctp-accent: var(--ctp-maroon);
   color-scheme: light;
 }
 
