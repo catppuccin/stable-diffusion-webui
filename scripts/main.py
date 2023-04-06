@@ -34,6 +34,8 @@ def on_ui_settings():
 def on_accent_color_change():
     pattern = re.compile(r"--ctp-accent:\s*(.*)")
     # replace the accent color
+
+
     with open(os.path.join(script_path,'style.css'), "r+") as file:
         text = re.sub(pattern, f'--ctp-accent: var(--ctp-{shared.opts.accent_color});', file.read(), count=1)
         file.seek(0)
@@ -42,9 +44,21 @@ def on_accent_color_change():
 
 def on_ui_settings_change():
     # Move css over
-    shutil.copy(os.path.join(script_path,f'flavors/{shared.opts.ctp_flavor}.css'), os.path.join(script_path, 'style.css'))
-    
+    if gr.__version__ < '3.23.0':
+        shutil.copy(os.path.join(script_path,f'flavors/legacy/{shared.opts.ctp_flavor}.css'), os.path.join(script_path, 'style.css'))
+    else: 
+        shutil.copy(os.path.join(script_path,f'flavors/{shared.opts.ctp_flavor}.css'), os.path.join(script_path, 'style.css'))
     # reappply accent color
     on_accent_color_change()
 
 script_callbacks.on_ui_settings(on_ui_settings)
+
+# If the gradio version is legacy and the current theme is not,
+# then copy the legacy theme over
+if gr.__version__ < '3.23.0':
+    print('[Catppuccin Theme] Legacy Gradio detected!')
+    with open(os.path.join(script_path,'style.css'), "r") as file:
+        first_line = file.readline()
+        if not first_line.startswith('/* legacy */'):
+            print('[Catppuccin Theme] Setting up legacy theme... You may need to reload the ui to see changes')
+            shutil.copy(os.path.join(script_path,f'flavors/legacy/{shared.opts.ctp_flavor}.css'), os.path.join(script_path, 'style.css'))
