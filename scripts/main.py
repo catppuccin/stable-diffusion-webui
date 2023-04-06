@@ -32,12 +32,15 @@ def on_ui_settings():
                             ))
 
 def on_accent_color_change():
-    pattern = re.compile(r"--ctp-accent:\s*(.*)")
     # replace the accent color
-
-
     with open(os.path.join(script_path,'style.css'), "r+") as file:
-        text = re.sub(pattern, f'--ctp-accent: var(--ctp-{shared.opts.accent_color});', file.read(), count=1)
+        if gr.__version__ < '3.23.0':
+            pattern = re.compile(r"--accent:\s*(.*)")
+            text = re.sub(pattern, f'--accent: var(--{shared.opts.accent_color});', file.read(), count=1)
+
+        else:
+            pattern = re.compile(r"--ctp-accent:\s*(.*)")
+            text = re.sub(pattern, f'--ctp-accent: var(--ctp-{shared.opts.accent_color});', file.read(), count=1)
         file.seek(0)
         file.write(text)
         file.truncate()
