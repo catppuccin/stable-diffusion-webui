@@ -151,17 +151,6 @@ input[type='range']:focus::-ms-fill-upper {
   background: var(--ctp-overlay0);
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type='number'] {
-  -moz-appearance: textfield;
-}
 .gr-box > div > div > input.gr-text-input {
   width: 4em;
 }
