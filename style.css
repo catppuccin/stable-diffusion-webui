@@ -27,8 +27,14 @@
   --ctp-crust: #11111b;
   --shadow: #010409;
   --ctp-accent: var(--ctp-maroon);
-  color-scheme: dark;
+  --color-scheme: dark;
+  /* Define missing variables */
+  --background-fill-primary: var(--ctp-mantle);
+  --background-fill-secondary: var(--ctp-base);
 }
+
+
+
 
 :root,
 .dark {
